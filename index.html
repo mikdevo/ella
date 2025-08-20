@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ella | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading Ella's World...</div>
+        </div>
+    </div>
+
+    <div class="particles-container" id="particles-js"></div>
+
+    <div class="portfolio-container">
+        <div class="profile-card glass-effect">
+            <div class="language-toggle">
+                <button id="langToggle" class="lang-toggle-btn" aria-label="Toggle language">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <div class="language-menu" id="languageMenu">
+                    <div class="language-menu-item active" data-lang="en">
+                        <i class="fas fa-check"></i>
+                        <span>English</span>
+                    </div>
+                    <div class="language-menu-item" data-lang="ar">
+                        <i class="fas fa-check"></i>
+                        <span>العربية</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="theme-toggle">
+                <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            
+            <div class="profile-header">
+                <div class="profile-img-container">
+                    <img id="profileImage" src="images/default-avatar.png" alt="Ella" class="profile-img">
+                    <div class="profile-img-border"></div>
+                </div>
+                <h1 class="profile-name">Ella</h1>
+                <p class="profile-tagline" data-i18n="tagline">Artist • Designer • Photographer • Karate</p>
+            </div>
+            
+            <div class="pronouns-badge">
+                <i class="fas fa-user"></i> <span data-i18n="pronouns">she/her</span>
+            </div>
+            
+            <div class="profile-bio">
+                <p class="bio-text" data-i18n="shortBio">just Ella<br>wick's lover ⟢<br>18th September ˙✦</p>
+            </div>
+            
+            <div class="social-container">
+                <h3 class="social-heading" data-i18n="findMeOnline">Find Me Online</h3>
+                <div class="social-links">
+                    <a href="https://discord.gg/iraq" id="discordLink" class="social-icon" target="_blank" data-tooltip="Discord"><i class="fab fa-discord"></i></a>
+                    <a href="https://open.spotify.com/user/31ixqxb5hyl6gpdeugs3ppe6zfhi?si=dQ8uNAUsSkKIAxXE2XWZLg" id="spotifyLink" class="social-icon" target="_blank" data-tooltip="Spotify"><i class="fab fa-spotify"></i></a>
+                    <a href="https://www.instagram.com/i7ixilsl?igsh=MTV3bzluOHl3Yjl1NA%3D%3D&utm_source=qr" id="instagramLink" class="social-icon" target="_blank" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-area">
+            <section class="welcome-section section glass-effect">
+                <h2 class="section-title" data-i18n="welcomeTitle">Welcome to my world <span class="accent-emoji">✨</span></h2>
+                <div class="welcome-content">
+                    <p>Hey there! I'm Ella, a passionate artist and designer who loves capturing life through photography. ✨</p>
+                    <p>When I'm not creating art or taking photos, you'll find me practicing karate or diving into my favorite games.</p>
+                    <p>I believe in expressing creativity in every form - whether it's through visual art, design, or the perfect screenshot in-game.</p>
+                    <p>Feel free to explore my world and connect with me! 💫</p>
+                </div>
+            </section>
+            
+            <section class="hobbies-section section glass-effect">
+                <h2 class="section-title" data-i18n="hobbiesTitle">My Passions <span class="accent-emoji">🎨</span></h2>
+                <div class="hobbies-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="hobby-info">
+                            <h3 data-i18n="hobby1Name">Art</h3>
+                            <p data-i18n="hobby1Type">Creative Expression</p>
+                        </div>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-pen-nib"></i>
+                        </div>
+                        <div class="hobby-info">
+                            <h3 data-i18n="hobby2Name">Design</h3>
+                            <p data-i18n="hobby2Type">Visual Communication</p>
+                        </div>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-camera"></i>
+                        </div>
+                        <div class="hobby-info">
+                            <h3 data-i18n="hobby3Name">Photography</h3>
+                            <p data-i18n="hobby3Type">Capturing Moments</p>
+                        </div>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">
+                            <i class="fas fa-fist-raised"></i>
+                        </div>
+                        <div class="hobby-info">
+                            <h3 data-i18n="hobby4Name">Karate</h3>
+                            <p data-i18n="hobby4Type">Martial Arts</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="games-section section glass-effect">
+                <h2 class="section-title" data-i18n="gamesTitle">Favorite Games <span class="accent-emoji">🎮</span></h2>
+                <div class="games-grid">
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="images/game1.jpg" alt="COD Mobile" loading="lazy">
+                            <div class="game-overlay">
+                                <div class="game-info">
+                                    <h3 data-i18n="game1Name">COD Mobile</h3>
+                                    <p data-i18n="game1Type">FPS</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="images/game2.jpg" alt="Sims 4" loading="lazy">
+                            <div class="game-overlay">
+                                <div class="game-info">
+                                    <h3 data-i18n="game2Name">Sims 4</h3>
+                                    <p data-i18n="game2Type">Life Simulation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="images/game3.jpg" alt="Minecraft" loading="lazy">
+                            <div class="game-overlay">
+                                <div class="game-info">
+                                    <h3 data-i18n="game3Name">Minecraft</h3>
+                                    <p data-i18n="game3Type">Sandbox</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-card">
+                        <div class="game-image">
+                            <img src="images/game4.jpg" alt="Genshin Impact" loading="lazy">
+                            <div class="game-overlay">
+                                <div class="game-info">
+                                    <h3 data-i18n="game4Name">Genshin Impact</h3>
+                                    <p data-i18n="game4Type">Action RPG</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contact-section section glass-effect">
+                <h2 class="section-title" data-i18n="contactTitle">Get In Touch <span class="accent-emoji">✉️</span></h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3 data-i18n="contactInfo">Contact Information</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-text">
+                                <h4 data-i18n="emailTitle">Email</h4>
+                                <p>ella@wick.ink</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-platforms">
+                        <h3 data-i18n="bestWays">Best ways to reach me:</h3>
+                        <div class="platform-links">
+                            <a href="https://discord.gg/iraq" class="platform-link discord" data-i18n="discordDM">
+                                <i class="fab fa-discord"></i> Discord
+                            </a>
+                            <a href="mailto:ella@wick.ink" class="platform-link email" data-i18n="emailContact">
+                                <i class="fas fa-envelope"></i> Email
+                            </a>
+                            <a href="https://www.instagram.com/i7ixilsl?igsh=MTV3bzluOHl3Yjl1NA%3D%3D&utm_source=qr" class="platform-link instagram" data-i18n="instagramDM">
+                                <i class="fab fa-instagram"></i> Instagram
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    <footer class="footer glass-effect">
+        <p>&copy; <span id="currentYear"></span> Ella. <span data-i18n="allRights">All rights reserved.</span></p>
+        <div class="footer-links">
+            <a href="#" class="footer-link" data-i18n="privacy">Privacy Policy</a>
+            <span class="divider">•</span>
+            <a href="mailto:ella@wick.ink" class="footer-link" data-i18n="contact">Contact</a>
+            <span class="divider">•</span>
+            <a href="#" class="footer-link" data-i18n="terms">Terms of Service</a>
+        </div>
+    </footer>
+    
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <script>
+        const pageLoader = document.getElementById('pageLoader');
+        if (pageLoader) {
+            setTimeout(function() {
+                pageLoader.style.opacity = '0';
+                setTimeout(function() {
+                    pageLoader.style.display = 'none';
+                }, 300);
+            }, 600);
+        }
+        
+        const themeToggle = document.getElementById('themeToggle');
+        if (themeToggle) {
+            themeToggle.addEventListener('click', function() {
+                document.body.classList.toggle('light-theme');
+                const icon = this.querySelector('i');
+                if (icon) {
+                    if (document.body.classList.contains('light-theme')) {
+                        icon.className = 'fas fa-sun';
+                    } else {
+                        icon.className = 'fas fa-moon';
+                    }
+                }
+            });
+        }
+        
+        if (typeof particlesJS !== 'undefined') {
+            particlesJS('particles-js', {
+                particles: {
+                    number: { value: 30, density: { enable: true, value_area: 1000 } },
+                    color: { value: "#ffffff" },
+                    shape: { type: "circle" },
+                    opacity: { value: 0.2, random: false },
+                    size: { value: 2, random: true, anim: { enable: false } },
+                    line_linked: {
+                        enable: true,
+                        distance: 100,
+                        color: "#ffffff",
+                        opacity: 0.1,
+                        width: 1
+                    },
+                    move: {
+                        enable: true,
+                        speed: 0.5,
+                        direction: "none",
+                        random: false,
+                        straight: false,
+                        out_mode: "out",
+                        bounce: false
+                    }
+                },
+                interactivity: {
+                    detect_on: "canvas",
+                    events: {
+                        onhover: { enable: false },
+                        onclick: { enable: false },
+                        resize: true
+                    }
+                },
+                retina_detect: false
+            });
+        }
+    </script>
+</body>
+</html>
